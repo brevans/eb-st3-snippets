@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+modextrapaths = {
+	'${1:PATH}': '${2:relative/to/installdir}',
+}
+]]></content>
+	<tabTrigger>modextrapaths</tabTrigger>
+</snippet>

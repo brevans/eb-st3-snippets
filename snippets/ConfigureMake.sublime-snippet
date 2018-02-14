@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+easyblock = 'ConfigureMake'
+
+name = '${1:appname}'
+version = '${2:app_version}'
+
+homepage = '${3:httphomepage}'
+description = """${4:copypasta_from_homepage}"""
+
+toolchain = {'name': '${5:foss}', 'version': '${6:2016b}'}
+
+source_urls = ['${7:url_prefix_for_source}']
+
+sources = ['${8:%(namelower)s-%(version)s.tar.gz}']
+
+# skipsteps = ['configure']
+# installopts = 'PREFIX=%(installdir)s'
+
+sanity_check_paths = {
+	'files': [${9: files_to_copy}],
+	'dirs': [],
+}
+
+moduleclass = '${10:base, bio, cae, chem, compiler, data, debugger, devel, geo, ide, lang, lib, math, mpi, numlib, perf, phys, system, toolchain, tools, vis}'
+
+]]></content>
+	<tabTrigger>ConfigureMake</tabTrigger>
+</snippet>

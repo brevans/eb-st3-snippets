@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+easyblock = 'PythonPackage'
+
+name = '${1:appname}'
+version = '${2:app_version}'
+versionsuffix = '-Python-%(pyver)s'
+
+homepage = '${3:httphomepage}'
+description = """${4:copypasta_from_homepage}"""
+
+toolchain = {'name': '${5:foss}', 'version': '${6:2016b}'}
+
+source_urls = ['${7:PYPI_SOURCE}'']
+sources = ['${8:SOURCE_TAR_GZ}']
+
+# options = {'modulename': False}
+
+dependencies = [
+	('Python', '${9:2.7.13}'),
+]
+
+moduleclass = '${10:base, bio, cae, chem, compiler, data, debugger, devel, geo, ide, lang, lib, math, mpi, numlib, perf, phys, system, toolchain, tools, vis}'
+]]></content>
+	<tabTrigger>PythonPackage</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+builddependencies = [
+	('${1:name}', '${2:version}', '${3:-versionsuffix}'),
+]
+]]></content>
+	<tabTrigger>builddependencies</tabTrigger>
+</snippet>

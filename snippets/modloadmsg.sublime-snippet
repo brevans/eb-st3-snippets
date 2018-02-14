@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+modloadmsg = "${1:To use this app, run 'java -jar \$EBROOTAPP/ij.jar'\n}"
+]]></content>
+	<tabTrigger>modloadmsg</tabTrigger>
+</snippet>

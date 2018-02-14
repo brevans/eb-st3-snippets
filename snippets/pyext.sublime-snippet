@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+	('${1:extname}', '${2:extversion}', {
+# 		'modulename': 'different',
+		'source_urls': ['${3:PYPI_SOURCE}'],
+		'source_tmpl': '${4:SOURCE_TAR_GZ}',
+	}),
+]]></content>
+	<tabTrigger>pyext</tabTrigger>
+</snippet>
