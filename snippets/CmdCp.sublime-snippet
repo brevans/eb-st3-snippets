@@ -10,19 +10,19 @@ description = """${4:copypasta_from_homepage}"""
 
 toolchain = {'name': '${5:foss}', 'version': '${6:2016b}'}
 
-source_urls = ['${5:url_prefix_for_source}']
-sources = ['${6:%(namelower)s-%(version)s.tar.gz}']
+source_urls = ['${7:url_prefix_for_source}']
+sources = ['${8:%(namelower)s-%(version)s.tar.gz}']
 
-cmds_map = [${7:('.*', "./wacky_compile")}]
+cmds_map = [${9:('.*', "./wacky_compile")}]
 
-files_to_copy = [ ${8:(['binary1'], 'bin')} ]
+files_to_copy = [ ${10:(['binary1'], 'bin')} ]
 
 sanity_check_paths = {
-	'files': ['${9}'],
+	'files': [${11:files_to_copy}],
 	'dirs': [],
 }
 
-moduleclass = '${10:base, bio, cae, chem, compiler, data, debugger, devel, geo, ide, lang, lib, math, mpi, numlib, perf, phys, system, toolchain, tools, vis}'
+moduleclass = '${12:base, bio, cae, chem, compiler, data, debugger, devel, geo, ide, lang, lib, math, mpi, numlib, perf, phys, system, toolchain, tools, vis}'
 ]]></content>
 	<tabTrigger>CmdCp</tabTrigger>
 </snippet>

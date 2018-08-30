@@ -21,7 +21,7 @@ files_to_copy = ['${9:bin', 'lib}']
 
 sanity_check_paths = {
 	'files': [],
-	'dirs': [${10: files_to_copy}],
+	'dirs': [${10:files_to_copy}],
 }
 
 moduleclass = '${11:base, bio, cae, chem, compiler, data, debugger, devel, geo, ide, lang, lib, math, mpi, numlib, perf, phys, system, toolchain, tools, vis}'

@@ -18,8 +18,8 @@ sources = ['${8:%(namelower)s-%(version)s.tar.gz}']
 # installopts = 'PREFIX=%(installdir)s'
 
 sanity_check_paths = {
-	'files': [${9: files_to_copy}],
-	'dirs': [],
+	'files': [],
+	'dirs': [${9:'lib', 'bin'}],
 }
 
 moduleclass = '${10:base, bio, cae, chem, compiler, data, debugger, devel, geo, ide, lang, lib, math, mpi, numlib, perf, phys, system, toolchain, tools, vis}'
